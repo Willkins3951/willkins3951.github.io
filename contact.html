@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/test/frontend/4menu.css">
+        <link rel="stylesheet" href="/test/project/1project.css">
+
+        <style>
+            body{
+                background: transparent;
+                height:max-content;
+            }
+
+            .login-signup-btn{
+            margin-right: 20px;
+            }
+
+            .footer{
+                background: ;
+                POSITION:absolute;
+                ottom:0;
+            }
+            .footer-nav-links li a{
+                color:white;
+                margin-bottom: 3px;
+                font-size: 17px;
+            }
+
+    .home-content{
+    width:100%;
+    height:380px;
+    background: var(--primary-color);
+    padding:var(--main-padding)
+
+}
+
+        .home-content::before,
+        .home-content::after {
+            content:"" ;
+            position: absolute;
+            Background-color:--primary-color;
+            bottom:180px;
+            left:0;
+            right:0;
+            height:80px;
+            transform: skewY(-3.50deg);
+        }
+    .demo-form{
+    width:330px;
+    height:380px;
+    background-color: var(--light-color);
+    z-index:950;
+    overflow: visible;
+    box-shadow:  0 0 10px grey;
+    border-radius: 5px;
+    padding: 15px 0 0 25px;
+
+    animation:slideInFromRight 1s linear;
+}
+
+.fa-phone{
+    color:#fff;
+    font-size: 2.5rem;
+    margin-right: 2px;
+
+    animation:bounce 5s linear infinite alternate;
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+}
+
+.email-us{
+    background-color:grey;
+    box-shadow:0 0 15px rgba(91, 56, 156, 0.829);
+    filter: blur(0.2px);
+    width:100%;
+    z-index: 1;
+    height:200px;
+    margin:15% 0 0 0;
+
+}
+.btn-ctr{
+    
+    position: relative;
+    height:100%;
+    width:32%;
+
+    display:flex;
+    padding:20px 20px 0 20px;
+    justify-content: space-around;
+}
+.email-us .btn{
+    background: linear-gradient(45deg,blue,cyan);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding:10px;
+    margin-top: 50%;
+    transition: .3s ease-in-out;
+}
+.email-us .btn a{
+    color:white;
+    
+}
+.email-us .btn a:hover{
+    color:blue;   
+}
+.email-us .btn:hover{
+    color:blue;
+    background: cyan;
+    box-shadow: 0 0 25px cyan,
+    0 0 50px cyan,
+    0 0 200px cyan;
+    transform: scale(1.05);
+}
+
+
+
+
+</style>
+
+       
+    </head>
+    <body>
+       <div>
+
+        <!--navbar-->
+        <header>
+            
+
+           
+            <div class="logo">
+                <span>f</span>
+                <span>r</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>e</span>
+                <span>n</span>
+                <span>d</span>
+                
+            </div>
+            
+
+            <input type="checkbox" id="nav-check">
+
+            <div class="nav-btn">
+                <label for="nav-check">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            </div>
+
+       
+
+
+            <div class="navlinks">
+                <li><a href="1project.html" class="links">home </a></li>
+                <li><a href="docs.html" class="links">blog</a></li>
+                <li><a href="features.html" class="links">Features</a></li>
+                <li><a href="contact.html" class="links">contacts</a></li>
+                
+            </div>
+
+            <!--LOGIN AND SIGN UP BUTTONS-->
+
+            <div class="login-signup-btn">
+                
+                <a href="login.html"><button>Log In</button></a>
+                
+            </div>
+
+
+
+        </header>
+
+        
+            <!----- BODY SECTION WITH SOME TEXT AND DEMO FORM ---------->
+
+            <section class="home-content grid mg-2"  >
+                <div class="home-text ">
+                    <h1> <i class="fa fa-phone" aria-hidden="true"> </i> Contact us ...</h1>
+                    <p>you can get in touch with us by filling and submiting the form .our service desk shall reply after a few moment. </p>
+                    
+                    <input type="button" class="btn" type="submit" value="Welcome">     
+                </div>
+
+                <div class="demo-form">
+                    <h2>Connect to Us</h2>
+                    <form >
+                        <div class="form-inputs">
+                            <input type="text" name="fastName" placeholder="fastName" required>
+                            <i class="fa fa-user" aria-hidden="true"> </i>
+                        </div>
+                        <div class="form-inputs">
+                            <input type="text" name="lastName" placeholder="lastName" required>
+                            <i class="fa fa-user" aria-hidden="true"> </i>
+                        </div>
+
+                        <div class="form-inputs">
+                            <input type="text" name="name" placeholder="Company Name" required>
+                            <i class="fa fa-industry" aria-hidden="true"> </i>
+                        </div>
+
+                        <div class="form-inputs">
+                            <input type="email" name="email" placeholder="Email" required>
+                            <i class="fa fa-envelope" aria-hidden="true"> </i>
+                        </div>
+
+                        <div class="form-inputs">
+                            <input type="password" name="Passowrd" placeholder="password" required>
+                            <i class="fa fa-lock" aria-hidden="true"> </i>
+                        </div>
+
+                        <button  class="btn-demo" type="submit">Send</button>
+
+                    </form>
+                </div>
+                
+            </section>
+
+            <!-----------SECTION EMAIL---------->
+
+            <div class="email-us">
+                
+                <div class="btn-ctr">
+                    <div class="btn-1">
+                        <button class="btn"><a href="Mailto:wka@gmail.com">let's talk</a></button>
+                    </div>
+
+                    <div class="btn-1">
+                        <button class="btn"><a href="APL.docx">download Cv </a></button>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+             <!------------ FOOTER  SECTION ---------->
+        <section class="footer">
+            <div class="foter-logo">
+                <h3>FRONTEND .</h3>
+                <p>Copyright &copy; 2023 . </p>
+            </div>
+
+            <div class="footer-nav-links">
+                        
+                <li> <a href="1project.html" class="links" >Home</a> </li>
+                <li> <a href="Features.html" class="links" >Features</a> </li>
+                <li> <a href="Docs.html" class="links" >Documents</a> </li>
+            
+            </div>
+
+            <div class="social-links">
+                <img src="twitterlogo.png">
+                <img src="share.jpeg">
+                <img src="ig.jpeg">
+                <img src="youtubelogo.png">
+            </div>
+
+
+        </section>
+
+    </body>
+</html>

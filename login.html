@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login Form</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="login.css">
+
+       
+    </head>
+    <body>
+       <div>
+
+        <!--navbar-->
+        <header>
+            
+
+           
+            <div class="logo">
+                <span>f</span>
+                <span>r</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>e</span>
+                <span>n</span>
+                <span>d</span>
+                
+            </div>
+            
+
+            <input type="checkbox" id="nav-check">
+
+            <div class="nav-btn">
+                <label for="nav-check">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            </div>
+
+       
+
+
+            <div class="navlinks">
+                <li><a href="1project.html" class="links">home </a></li>
+                <li><a href="features.html" class="links">blog</a></li>
+                <li><a href="contact.html" class="links">contacts</a></li>
+                
+            </div>
+
+            <!--LOGIN AND SIGN UP BUTTONS-->
+
+            <div class="login-signup-btn">
+                <button class="login-btn-shortcut" onclick="myLoginFunc()">Log-In</button>
+                 
+                <button class="sign-up-btn-shortcut" onclick="mySignUpFunc()">Sign-Up</button> 
+            </div>
+
+
+
+        </header>
+
+        <section>
+            
+
+            <!--------------LOGIN FORM------------>
+
+    
+
+             <form action="POST" >
+
+                <div class="form" id="login-form"> 
+                 
+                    <div class="profilepic">
+                        <img src="avater.jpeg" class="avater">
+                    </div>
+                         
+                    <div class="login-inputs">
+                        <input class="inpt" type="email" name="email" placeholder="Enter email address" required >
+                        <i class="fa fa-envelope" aria-hidden="true"> </i>
+
+                        <input type="password" name="password" placeholder="enter password"  required>
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                    </div>
+                        
+            <button type="submit" class="login" id="login-btn" onclick="myFunc()">Login</button> 
+                         
+            <div class="remember-me">
+            
+                    <div class="checkbx">
+                        <input type="checkbox" id="check" class="check2">
+                        <label for="check"  >
+                            <span>remember,me?</span>
+                            
+                        </label> 
+                    </div>
+                                
+                    <span>
+                        <a href="#">forgot password</a>
+                    </span>
+                    
+            </div>
+        
+            <div class="register">
+                <p class="link" >creat a new account? </p> 
+                <button onclick="mySignUpFunc()">Sign Up</button> 
+           </div>
+        
+        
+                <p class="liw">log in with:</p> 
+        
+                <div class="links">
+                    <img src="ig.jpeg">
+                    <img src="fb.png">
+                    <img src="youtubelogo.png">
+                    <img src="twitterlogo.png">
+                </div>
+                </div>
+            </form>
+        
+                        
+
+
+
+
+             <!--SIGN UP FORM-->
+
+    <form action="POST" >
+
+        <div class="form" id="sign-up-form"> 
+         
+            <div class="profilepic">
+                <img src="avater.jpeg" class="avater">
+            </div>
+                 
+        <div class="login-inputs">
+            <input class="inpt" type="email" name="email" placeholder="Enter email address" required >
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+
+            <input type="password" name="password" placeholder="enter password"  required>
+            <i class="fa fa-lock" aria-hidden="true"></i>
+
+            <input type="password" name="password" placeholder="confirm password"  required>
+            <i class="fa fa-lock" aria-hidden="true"></i>
+
+        </div>
+                
+    <button type="submit" class="login" id="sign-up-btn" onclick="myFunc2()">Sign Up</button> 
+                 
+    <div class="remember-me">
+    <!--
+            <div class="checkbx">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkk" >
+                    <span>remember,me?</span>
+                    
+                </label> 
+            </div>
+                        
+            <span>
+                <a href="#">forgot password</a>
+            </span>
+            -->
+    </div>
+
+        <div class="register">
+            <p class="link" >Already have an account? </p> 
+            <button class="login-btn" onclick="myLoginFunc()">Log In</button> 
+        </div>
+
+
+        <p class="liw">log in with:</p> 
+
+        <div class="links">
+            <img src="ig.jpeg">
+            <img src="fb.png">
+            <img src="youtubelogo.png">
+            <img src="twitterlogo.png">
+        </div>
+        </div>
+    </form>
+
+        
+
+             
+
+        </section>
+
+        <!--bodysection-->
+        <sec>
+     <!--
+            .nav-btn{
+                position:absolute;
+                flex:right;
+                right:0;
+                margin-right: 10%;
+                top:8px;
+               
+            }
+           
+
+            .nav-btn span:nth-child(2){
+                display:none;
+               
+            }
+            .nav-btn span:nth-child(1){
+                position: relative;
+                transform: rotate(400deg);
+                #border-color: aqua;
+                top:1px
+                
+            }
+            .nav-btn span:nth-child(3){
+                position: relative;
+                transform: rotate(-410deg);
+                margin-bottom: 10px;
+                bottom:10px;
+            }
+
+
+            #162e4f
+            #ff7200
+
+
+            
+            -->
+
+
+
+
+        </section>
+
+
+
+
+
+       </div>
+        
+       <script>
+        function myFunc(){
+            document.getElementById('login-btn').innerHTML="login-test-success";
+        }
+        function myFunc2(){
+            document.getElementById('sign-up-btn').innerHTML="signin-test-success";
+        }
+
+        function mySignUpFunc(){
+            document.getElementById('login-form').style.display='none';
+            document.getElementById('sign-up-form').style.display='block';
+        }        
+        function myLoginFunc(){
+            document.getElementById('login-form').style.display='block';
+            document.getElementById('sign-up-form').style.display='none';
+        }
+    </script>
+    </body>
+</html>

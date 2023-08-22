@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Docs Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/test/frontend/4menu.css">
+        <link rel="stylesheet" href="/test/project/1project.css">
+
+        <style>
+            body{
+                background: transparent;
+                height:max-content;
+            }
+            .login-signup-btn{
+            margin-right: 20px;
+            }
+
+            .footer{
+                background:deepblue;
+                POSITION:absolute;
+                height:110px;
+                bottom:0;
+                left:0;
+                right:0;
+                z-index: 1;
+            }
+            .footer-nav-links li a{
+                color:white;
+                margin-bottom: 3px;
+                font-size: 17px;
+            }
+
+    .home-content{
+    width:100%;
+    height:380px;
+    background: var(--primary-color);
+    padding:var(--main-padding)
+
+}
+
+        .home-content::before,
+        .home-content::after {
+            content:"" ;
+            position: absolute;
+    
+            Background-color:--primary-color;
+            bottom:180px;
+            left:0;
+            right:0;
+            height:80px;
+            transform: skewY(-3.50deg);
+        }
+    .demo-form{
+    width:330px;
+    height:380px;
+    background-color: var(--light-color);
+    z-index:950;
+    overflow: visible;
+    box-shadow:  0 0 10px grey;
+    border-radius: 5px;
+    padding: 15px 0 0 25px;
+
+    animation:slideInFromRight 1s linear;
+}
+        </style>
+
+       
+    </head>
+    <body>
+       <div>
+
+        <!--navbar-->
+        <header>
+            
+
+           
+            <div class="logo">
+                <span>f</span>
+                <span>r</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>e</span>
+                <span>n</span>
+                <span>d</span>
+                
+            </div>
+            
+
+            <input type="checkbox" id="nav-check">
+
+            <div class="nav-btn">
+                <label for="nav-check">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            </div>
+
+       
+
+
+            <div class="navlinks">
+                <li><a href="1project.html" class="links">home </a></li>
+                <li><a href="features.html" class="links">blog</a></li>
+                <li><a href="docs.html" class="links">docs</a></li>
+                <li><a href="contact.html" class="links">contacts</a></li>
+                
+            </div>
+
+            <!--LOGIN AND SIGN UP BUTTONS-->
+
+            <div class="login-signup-btn">
+                <a href="login.html"><button>Log In</button></a>
+               
+            </div>
+
+
+
+        </header>
+
+        
+            <!----- BODY SECTION WITH SOME TEXT AND DEMO FORM ---------->
+
+            <section class="home-content grid mg-2"  >
+                <div class="home-text ">
+                    <h1>docs page ...</h1>
+                    <p><h1> docs page still under development</h1> </p>
+                    
+                    <input type="button" class="btn" type="submit" value="Welcome">     
+                </div>
+
+                
+                   
+
+             <!------------ FOOTER  SECTION ---------->
+        <section class="footer">
+            <div class="foter-logo">
+                <h3>FRONTEND .</h3>
+                <p>Copyright &copy; 2023 . </p>
+            </div>
+
+            <div class="footer-nav-links">
+                        
+                <li> <a href="1project.html" class="links" >Home</a> </li>
+                <li> <a href="Features.html" class="links" >Features</a> </li>
+                <li> <a href="Docs.html" class="links" >Documents</a> </li>
+            
+            </div>
+
+            <div class="social-links">
+                <img src="twitterlogo.png">
+                <img src="share.jpeg">
+                <img src="ig.jpeg">
+                <img src="youtubelogo.png">
+            </div>
+
+
+        </section>
+
+    </body>
+</html>
